@@ -1,0 +1,115 @@
+/* pre set */
+:root{
+    --dark-cyan: #19a2ae;
+    --very-dark: #2d3248;
+    --dark-grayish: #6a6f81;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.card p, 
+span{
+    color: var(--dark-grayish)
+}
+h3{
+    color: var(--very-dark);
+}
+body{
+    font-family: 'Kumbh Sans', sans-serif;
+}
+
+/* background image style */
+
+.bg-circle .bg-top,
+.bg-circle .bg-bottom{
+    position: absolute;
+}
+
+.bg-circle .bg-top{
+    top: -350px;
+    left: -120px;
+}
+
+.bg-circle .bg-bottom{
+    bottom: -450px;
+    right: -100px;
+}
+
+/* card style */
+main{
+    background-color: var(--dark-cyan);
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+    padding: 20px;
+}
+.card {
+    width: 400px;
+    height: 430px;
+    background-color: white;
+    border-radius: 20px;
+    text-align: center;
+    position: relative;
+    box-shadow: 0px 25px 150px rgba(45, 50, 72,.3);
+    z-index: 1;
+}
+
+/* perfil header style */
+header{
+    width: 100%;
+    height: 35%;
+    background-image: url("../images/bg-pattern-card.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 20px 20px 0 0;
+}
+header > img{
+    border-radius: 50%;
+    border: 4px solid #fff;
+    margin-top: 100px;
+}
+header > .perfil-bio{
+    margin-top: 25px;
+}
+header .perfil-bio > p{
+    font-size: 16px;
+    margin-top: 12px;
+}
+header h3 > span{
+    font-weight: 400;
+    margin-left: 10px;
+}
+
+/* perfil footer style */
+.card > .card-footer {
+    display: flex;
+    justify-content: space-between;
+    padding: 35px 50px;
+    border-top: 1px solid #e2e2e2;
+    margin-top: 170px;
+}
+.card > .card-footer .card-item > p {
+    font-size: 12px;
+    letter-spacing: 1px;
+    margin-top: 5px;
+}
+
+/* footer site */
+.site-footer{
+    width: 100%;
+    text-align: center;
+    background-color: #59bbb6;
+    padding: 10px;
+}
+.site-footer p, 
+.site-footer span,
+.site-footer a{
+    color: var(--very-dark);
+    letter-spacing: 1px;
+    font-size: 13px;
+}
